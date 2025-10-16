@@ -1,79 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#CD2E2C">
 
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>" type="image/x-icon">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#CD2E2C" />
 
-    <link rel="stylesheet" href="https://unpkg.com/open-props">
-    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+  <link rel="shortcut icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>"
+    type="image/x-icon" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dkgsssm.com">
-    <meta property="og:title" content="Dakshina Kannada Ganiga Samaja Seva Sangha Mangalore">
-    <meta property="og:image:secure_url" content="https://dkgsssm.com/assets/meta.jpg">
-    <meta property="og:description" content="Dakshina Kannada Ganiga Samaja Seva Sangha Mangalore">
-    <meta property="og:site_name" content="Dakshina Kannada Ganiga Samaja Seva Sangha Mangalore">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:logo" content="https://dkgsssm.com/assets/logo.jpeg" />
-    <meta name="twitter:card" content="Dakshina Kannada Ganiga Samaja Seva Sangha Mangalore">
-    <meta name="twitter:site" content="@rakshithbellare">
-    <meta name="twitter:creator" content="@rakshithbellare">
-    <meta name="twitter:url" content="https://dkgsssm.com">
-    <meta name="twitter:title" content="Dakshina Kannada Ganiga Samaja Seva Sangha Mangalore">
-    <meta name="twitter:description" content="Dakshina Kannada Ganiga Samaja Seva Sangha Mangalore">
-    <meta name="twitter:image" content="https://dkgsssm.com/assets/meta.jpg">
+  <title>DK Ganiga Samaja Seva Sangha</title>
+</head>
 
-    <title>DK Ganiga Samaja Seva Sangha</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="heading">
-        <img src="./assets/mortarboard.svg" alt="">
-        <span class="head-text">Community Portal</span>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="heading">
+      <img src="./assets/mortarboard.svg" alt="" />
+      <span class="head-text">Community Portal</span>
+    </div>
+    <nav>
+      <ul class="menus">
+        <li><a class="top-menu" href="#">Home</a></li>
+        <li><a class="top-menu" href="#">About Us</a></li>
+        <li><a class="top-menu" href="#">GPL</a></li>
+        <li><a class="top-menu" href="#">Past Events</a></li>
+        <li><a class="top-menu" href="#">Cultural Computation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="top-section">
+    <div class="inner-top-section">
+      <p class="sanga-heading">
+        ದಕ್ಷಿಣ ಕನ್ನಡ ಗಾಣಿಗ ಸಮಾಜ ಸೇವಾ ಸಂಘ (ರಿ) ಮಂಗಳೂರು
+      </p>
+      <button class="explore-btn">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="intro">
+    <div class="intro-texts">
+      <p class="intro-heading">Introduction</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+        accumsan arcu. Nulla facilisi. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia curae; Donec velit
+        neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+      </p>
+    </div>
+  </section>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./assets/Person.jpeg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./assets/place.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./assets/Person.jpeg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  <!-- About Us -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="./assets/event1.jpg" alt="About Image" />
       </div>
-      <nav>
-        <ul class="menus">
-          <li>
-            <a class="top-menu" href="#">Home</a>
-          </li>
-          <li>
-            <a class="top-menu" href="#">About Us</a>
-          </li>
-          <li>
-            <a class="top-menu" href="#">GPL</a>
-          </li>
-          <li>
-            <a class="top-menu" href="#">Past Events</a>
-          </li>
-          <li>
-            <a class="top-menu" href="#">Cultural Computation</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="top-section">
-        <div class="inner-top-section">
-          <p class="sanga-heading">ದಕ್ಷಿಣ ಕನ್ನಡ ಗಾಣಿಗ ಸಮಾಜ ಸೇವಾ ಸಂಘ (ರಿ) ಮಂಗಳೂರು</p>
-          <button class="explore-btn">Explore Now</button>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+          amet accumsan arcu. Nulla facilisi. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GPL -->
+  <section class="gpl">
+    <h2>Ganiga Premier League (GPL)</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+      Learn more about our commitment to open source and community
+      collaboration.
+    </p>
+    <button class="gpl-btn">View GPL License</button>
+  </section>
+
+  <!-- Science & Business -->
+  <section class="science-business">
+    <div class="card">
+      <h3>Science Model</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+        accumsan arcu.
+      </p>
+      <img src="./assets/science.jpg" alt="Science Model" />
+    </div>
+    <div class="card red">
+      <h3>Business Expo</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+        accumsan arcu.
+      </p>
+      <img src="./assets/business.jpg" alt="Business Expo" />
+    </div>
+  </section>
+
+  <!-- Our Members -->
+  <section class="members">
+    <h2>Our Members</h2>
+    <div class="member-list">
+      <div class="member">
+        <img src="./assets/member.jpg" alt="Member" />
+        <p class="member-name">Name</p>
+        <p class="member-role">Role</p>
+      </div>
+      <div class="member">
+        <img src="./assets/member.jpg" alt="Member" />
+        <p class="member-name">Name</p>
+        <p class="member-role">Role</p>
+      </div>
+      <div class="member">
+        <img src="./assets/member.jpg" alt="Member" />
+        <p class="member-name">Name</p>
+        <p class="member-role">Role</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Events -->
+  <section class="events">
+    <h2>Past Events</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+      accumsan arcu.
+    </p>
+    <img src="./assets/event-banner.jpg" alt="Event" class="event-img" />
+  </section>
+
+  <!-- Cultural Computation -->
+  <section class="culture">
+    <h2>Cultural Computation</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+      accumsan arcu. Nulla facilisi.
+    </p>
+    <div class="culture-grid">
+      <img src="./assets/culture1.jpg" alt="" />
+      <img src="./assets/culture2.jpg" alt="" />
+      <img src="./assets/culture3.jpg" alt="" />
+    </div>
+  </section>
+
+  <!-- Scholarship Distribution -->
+  <section class="scholarship">
+    <h2>Scholarship Distribution</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+      Supporting education and empowering the next generation of leaders.
+    </p>
+    <div class="scholarship-grid">
+      <img src="./assets/scholar1.jpg" alt="" />
+      <img src="./assets/scholar2.jpg" alt="" />
+    </div>
+  </section>
+
+  <!-- President's Speech -->
+  <section class="speech">
+    <div class="speech-text">
+      <h2>President's Speech</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+        accumsan arcu. Nulla facilisi. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia curae.
+      </p>
+    </div>
+    <div class="speech-img">
+      <img src="./assets/president.jpg" alt="President Speech" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-text">
+        <p class="add-text">
+          <strong>Add text / we can skip</strong><br />
+          Building bridge between culture and community
+        </p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li>About Us</li>
+            <li>GPL</li>
+            <li>Past Events</li>
+          </ul>
         </div>
-      </section>
-      <section class="intro">
-        <div class="intro-texts">
-          <p class="intro-heading">Introduction</p>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Nulla facilisi.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit
-          neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-          </p>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li>Science Model</li>
+            <li>Business Expo</li>
+            <li>Cultural Computation</li>
+          </ul>
         </div>
-      </section>
-    </main>
-  </body>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>info@ganigasamaja.in</li>
+            <li>+91 9876543210</li>
+            <li>123 Abcd Street</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        © 2025 Ganiga Samaja Mangalore Prime full project name. All rights
+        reserved. | Built with ❤️ by Amrith GG.
+      </p>
+    </div>
+  </footer>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+    
+  </script>
+</body>
+
 </html>
