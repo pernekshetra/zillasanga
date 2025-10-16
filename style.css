@@ -48,8 +48,8 @@ body {
 .top-section {
   position: relative;
   width: 100%;
-  height: 100vh; 
-  background: url("./assets/building.jpg") no-repeat center center/cover;
+  height: 80vh; 
+  background: url("./assets/place.webp") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +62,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.55); 
   display: flex;
   flex-direction: column;
@@ -110,9 +110,11 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 300px;
+  max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 40px auto; /* Add consistent top/bottom spacing */
+  overflow: hidden;
+  height: 450px;
 }
 
 /* Hide the images by default */
@@ -121,33 +123,32 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 50%; /* Keep arrows vertically centered */
+  transform: translateY(-50%); /* Align perfectly middle */
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  font-size: 22px;
+  transition: 0.3s ease;
+  border-radius: 3px;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -196,17 +197,42 @@ body {
 
 /* About */
 .about {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.about-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 60px 10%;
-  gap: 40px;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 80px;
 }
 
-.about img {
+.about-img img {
   width: 100%;
-  border-radius: 10px;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
 
 /* GPL */
 .gpl {
@@ -264,6 +290,7 @@ body {
   margin-top: 30px;
 }
 
+
 .member {
   background: #fff;
   border-radius: 10px;
@@ -284,6 +311,7 @@ body {
   padding: 60px 10%;
   background: #f8f8f8;
 }
+
 
 .event-img {
   width: 100%;
@@ -324,6 +352,81 @@ body {
 .scholarship-grid img {
   width: 48%;
   border-radius: 10px;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.imageContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  width: 200%;
+}
+
+.imageContainer .image{
+  height: 275px;
+  width: 100%;
+  background-image: url('./assets/place.webp');
+    background-size: cover;
+}
+
+.image:nth-child(odd){
+  background-image: url('./assets/Person.jpeg');
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left big, right small */
+  gap: 10px; /* Space between columns */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-image img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.main-image img {
+  height: 400px; 
+}
+
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-images img {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.side-images img {
+  height: 190px; 
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-images {
+    flex-direction: row;
+  }
+
+  .side-images img {
+    height: auto;
+  }
 }
 
 /* Speech */
