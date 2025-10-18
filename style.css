@@ -320,11 +320,32 @@ a {
   padding: 60px 10%;
 }
 
-.member-list {
+.members-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   margin-top: 30px;
+  & > .member-div {
+    background: #ebebeb;
+    border-radius: 12px;
+    padding: 12px;
+    outline-offset: 2px;
+    border: 1px solid #9E1B32;
+    outline: 1px solid #9E1B32; 
+    & > img {
+      width: 120px;
+      border-radius: 50px;
+      height: auto;
+    }
+    & > .name {
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+    & > .role {
+      font-size: 1rem;
+    }
+  }
 }
 
 
@@ -590,7 +611,7 @@ a {
   }
 
   .sanga-heading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .explore-btn {
@@ -607,10 +628,6 @@ a {
   .footer-links {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .sanga-heading {
-    font-size: 1.2rem;
   }
 }
 

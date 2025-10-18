@@ -9,13 +9,13 @@
           type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
-    <title>DK Ganiga Samaja Seva Sangha</title>
+    <title>DK Zilla Ganiga Samaja Seva Sangha® Mangaluru</title>
   </head>
   <body>
     <header class="header">
       <div class="heading">
         <img src="./assets/headerlogo.png" alt="" />
-        <span><strong>DK Ganiga Samaja Seva Sangha</strong></span>
+        <span><strong>DK Zilla Ganiga Samaja Seva Sangha® Mangaluru</strong></span>
       </div>
       <nav>
         <ul class="menus">
@@ -140,26 +140,10 @@
         </p>
       </div>
     </section>
-    <!-- <section class="members"> -->
-    <!--   <h2>Our Members</h2> -->
-    <!--   <div class="member-list"> -->
-    <!--     <div class="member"> -->
-    <!--       <img src="./assets/person.webp" alt="Member" /> -->
-    <!--       <p class="member-name">Name</p> -->
-    <!--       <p class="member-role">Role</p> -->
-    <!--     </div> -->
-    <!--     <div class="member"> -->
-    <!--       <img src="./assets/person.webp" alt="Member" /> -->
-    <!--       <p class="member-name">Name</p> -->
-    <!--       <p class="member-role">Role</p> -->
-    <!--     </div> -->
-    <!--     <div class="member"> -->
-    <!--       <img src="./assets/person.webp" alt="Member" /> -->
-    <!--       <p class="member-name">Name</p> -->
-    <!--       <p class="member-role">Role</p> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </section> -->
+    <section class="members">
+      <h2>Our Members</h2>
+      <div id="members-list" class="members-list"></div>
+    </section>
     <section class="events" id="events">
       <h2>Past Events</h2>
       <p>
@@ -330,22 +314,11 @@
       // Initialize both slideshows independently
       initSlideshow("slideshow1");
       initSlideshow("slideshow2");
-
-      let loop = horizontalLoop(".image", {speed: 1, repeat: -1, paddingRight: 25});
-
-      function setDirection(value) {
-        if (loop.direction !== value) {
-          gsap.to(loop, {timeScale: value, duration: 0.3, overwrite: true});
-          loop.direction = value;
-        }
-      }
-
-      Observer.create({
-        target: window,
-        type: "wheel,scroll,touch",
-        onDown: () => setDirection(1),
-        onUp: () => setDirection(-1)
-      })
+    </script>
+    <script src="script.js"></script>
+    <script type="module">
+      import members from "/members.json" with { type: "json" }; 
+      renderMembers(members);
     </script>
   </body>
 </html>
