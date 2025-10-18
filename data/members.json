@@ -42,16 +42,22 @@
     "place": "ಪಟ್ಟೆ"
   },
    {
-    "img": "assets/members/a5.jpg",
-    "name": "ಸುರೇಶ್ ಕರ್ಲಪ್ಪಾಡಿ",
-    "role": "ಕಾರ್ಯದರ್ಶಿ",
-    "place": "ಕರ್ಲಪ್ಪಾಡಿ"
+    "img": "assets/members/a8.jpg",
+    "name": "ದಿನಕರ ಅಳಿಕೆ",
+    "role": "ಸಂಘಟನಾ ಕಾರ್ಯದರ್ಶಿ",
+    "place": "ಮಂಗಳೂರು"
   },
    {
-    "img": "assets/members/a5.jpg",
-    "name": "ಸುರೇಶ್ ಕರ್ಲಪ್ಪಾಡಿ",
-    "role": "ಕಾರ್ಯದರ್ಶಿ",
-    "place": "ಕರ್ಲಪ್ಪಾಡಿ"
+    "img": "assets/members/a9.jpg",
+    "name": "ಕೇಶವ ಕೋರಿಗದ್ದೆ",
+    "role": "ಸಂಘಟನಾ ಕಾರ್ಯದರ್ಶಿ",
+    "place": "ಈಶ್ವರಮಂಗಲ"
+  },
+   {
+    "img": "assets/members/a10.jpg",
+    "name": "ಯಸ್ ದಾಮೋದರ ಪುತ್ತೂರು",
+    "role": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯದರ್ಶಿ",
+    "place": "ಪುತ್ತೂರು"
   }
   
 ]
