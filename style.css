@@ -548,6 +548,16 @@ body {
   flex-wrap: wrap; /* Added for responsiveness */
 }
 
+.footer-text {
+  & > span {
+    display: flex;
+    align-items: center;
+  }
+  strong {
+    padding-left: 12px;
+  }
+}
+
 .footer-links {
   display: flex;
   gap: 60px;
