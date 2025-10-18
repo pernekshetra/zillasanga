@@ -408,15 +408,10 @@ a {
   height: 275px;
   min-width: 300px;
   flex-shrink: 0;
-  background-image: url('./assets/cultural/1.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   transition: transform 0.3s ease;
-}
-
-.image:nth-child(odd) {
-  background-image: url('./assets/cultural/3.jpg');
 }
 
 .image:hover {
