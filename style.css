@@ -403,7 +403,7 @@ body {
   height: 275px;
   min-width: 300px;
   flex-shrink: 0;
-  background-image: url('./assets/cover/1.jpg');
+  background-image: url('./assets/cultural/1.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -411,7 +411,7 @@ body {
 }
 
 .image:nth-child(odd) {
-  background-image: url('./assets/person.webp');
+  background-image: url('./assets/cultural/3.jpg');
 }
 
 .image:hover {
