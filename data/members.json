@@ -1,4 +1,9 @@
-[
+[{
+    "img": "assets/members/a0.jpg",
+    "name": "ಶಂಕರ ಪಾಟಾಳಿ",
+    "role": "ಗೌರವಾಧ್ಯಕ್ಷರು",
+    "place": "ಮುಕ್ರಂಪಾಡಿ "
+  },
     {
     "img": "assets/members/a1.jpg",
     "name": "ಕೆ.ರಾಮ ಮುಗ್ರೋಡಿ",
@@ -112,14 +117,56 @@
   },
    {
     "img": "assets/members/a19.jpg",
-    "name": "ಮಹಾಲಿಂಗ ಪಂಚೋಡಿ",
+    "name": "ರಾಜೇಶ್ ದೇವಸ್ಯ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಈಶ್ವರಮಂಗಲ"
   },
    {
     "img": "assets/members/a20.jpg",
-    "name": "ಮಹಾಲಿಂಗ ಪಂಚೋಡಿ",
+    "name": "ನಾಗೇಶ್",
     "role": "ಸದಸ್ಯರು",
-    "place": "ಈಶ್ವರಮಂಗಲ"
+    "place": "ಪೆರುವಾಯಿ"
+  },
+   {
+    "img": "assets/members/a21.jpg",
+    "name": "ವಿಜಯ ಕುಮಾರ್",
+    "role": "ಸದಸ್ಯರು",
+    "place": "ಎರ್ಮೇಟ್ಟಿ"
+  },
+   {
+    "img": "assets/members/a22.jpg",
+    "name": "ಪ್ರಸಾದ್ ಬಾಕ್ತಿಮಾರ್",
+    "role": "ಸದಸ್ಯರು",
+    "place": "ಪುತ್ತೂರು"
+  },
+   {
+    "img": "assets/members/a23.jpg",
+    "name": "ಪ್ರದೀಪ್",
+    "role": "ಸದಸ್ಯರು",
+    "place": "ಪಟ್ಟುಮೂಲೆ"
+  },
+   {
+    "img": "assets/members/a24.jpg",
+    "name": "ನವೀನ್",
+    "role": "ಸದಸ್ಯರು",
+    "place": "ಪಾದೆಕಲ್ಲು"
+  },
+   {
+    "img": "assets/members/a25.jpg",
+    "name": "ಪ್ರವೀಣ್ ಕುಮಾರ್",
+    "role": "ಸದಸ್ಯರು",
+    "place": "ಜಯನಗರ"
+  },
+   {
+    "img": "assets/members/a26.jpg",
+    "name": "ಕೃಷ್ಣ ಡಿ ಯಸ್",
+    "role": "ಆಂತರಿಕ ಲೆಕ್ಕ ಪರಿಶೋಧಕರು",
+    "place": "ಮಂಗಳೂರು"
+  },
+   {
+    "img": "assets/members/a27.jpg",
+    "name": "ಚಂದ್ರಶೇಖರ ಉದ್ದಂತಡ್ಕ",
+    "role": "ಕಾನೂನು ಸಲಹೆಗಾರರು",
+    "place": "ಸುಳ್ಯ "
   }
 ]
