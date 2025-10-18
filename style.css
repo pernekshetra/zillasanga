@@ -677,3 +677,8 @@ a {
     text-align: center;
     color: var(--text);
   }
+
+.arivu {
+  color: #DC2626;
+  font-family: monospace;
+}
