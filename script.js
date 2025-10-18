@@ -19,6 +19,11 @@ function renderMembers(inMembers) {
       memberRole.classList.add("role");
       memberDiv.appendChild(memberRole);
 
+      const place = document.createElement("p");
+      place.textContent = member.place;
+      place.classList.add("role");
+      memberDiv.appendChild(place);
+
       membersDiv.appendChild(memberDiv);
     }
   }
