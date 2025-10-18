@@ -342,7 +342,7 @@ a {
     & > img {
       width: 120px;
       border-radius: 50px;
-      height: auto;
+      height: 150px;
     }
     & > .name {
       font-weight: bold;
