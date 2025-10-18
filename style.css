@@ -513,7 +513,6 @@ a {
 .speech-img img {
   width: 100%; 
   border-radius: 10px;
-  ;
 }
 
 .speech-text {
@@ -537,8 +536,6 @@ a {
     max-width: 300px; /* optional: limit image size on small screens */
   }
 }
-
-
 
 /* Footer */
 .footer {
@@ -621,7 +618,6 @@ a {
     font-size: 1.2rem;
   }
 }
-
 
 .sanga-subdivisions {
   --bg: #0b1220;
