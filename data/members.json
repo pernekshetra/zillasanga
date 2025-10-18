@@ -1,22 +1,26 @@
 [
-  {
-    "img": "assets/members/1.png",
-    "name": "Narendra Modi",
-    "role": "Prime Minister"
+    {
+    "img": "assets/members/a1.jpg",
+    "name": "ಕೆ.ರಾಮ ಮುಗ್ರೋಡಿ",
+    "role": "ಅಧ್ಯಕ್ಷರು",
+    "place": "ಮಂಗಳೂರು"
   },
   {
-    "img": "assets/members/1.png",
-    "name": "Narendra Modi",
-    "role": "Prime Minister"
+    "img": "assets/members/a2.jpg",
+    "name": "ಉದಯ ಕುಮಾರ್ ದಂಬೆ",
+    "role": "ಉಪಾಧ್ಯಕ್ಷರು",
+    "place": "ಪುಣಚ"
   },
   {
-    "img": "assets/members/1.png",
-    "name": "Narendra Modi",
-    "role": "Prime Minister"
+    "img": "assets/members/a3.jpg",
+    "name": "ಶಾರದಾ ಕೃಷ್ಣ ಈಶಾ",
+    "role": "ಉಪಾಧ್ಯಕ್ಷರು",
+    "place": "ಪುತ್ತೂರು"
   },
   {
-    "img": "assets/members/1.png",
-    "name": "Narendra Modi",
-    "role": "Prime Minister"
+    "img": "assets/members/a4.jpg",
+    "name": "ಮಹಾಲಿಂಗನ್ ಬಾಜರ್ತೊಟ್ಟಿ",
+    "role": "ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿಗಳು",
+    "place": "sulya"
   }
 ]
