@@ -37,6 +37,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
 
 .menus {
@@ -115,7 +120,7 @@ body {
 }
 
 .intro {
-  padding: 60px 15%;
+  padding: 10px 15%;
   text-align: center;
   > .intro-texts > ol {
     text-align: left;
@@ -317,7 +322,7 @@ a {
 /* Members */
 .members {
   text-align: center;
-  padding: 60px 10%;
+  padding: 60px 6%;
 }
 
 .members-list {
@@ -329,10 +334,11 @@ a {
   & > .member-div {
     background: #ebebeb;
     border-radius: 12px;
-    padding: 12px;
+    padding: 20px;
     outline-offset: 2px;
-    border: 1px solid #9E1B32;
-    outline: 1px solid #9E1B32; 
+    border: 2px dotted #9E1B32;
+    outline: 3px solid #9E1B32; 
+    width: 250px;
     & > img {
       width: 120px;
       border-radius: 50px;
