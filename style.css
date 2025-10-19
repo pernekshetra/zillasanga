@@ -136,6 +136,8 @@ nav {
 .intro {
   padding: 10px 15%;
   text-align: center;
+  position: relative;
+  z-index: 1;
   > .intro-texts {
     & > ol {
       text-align: left;
