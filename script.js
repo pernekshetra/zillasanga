@@ -35,10 +35,8 @@ const controllers = new Map();
 function initSlideshow(containerId) {
   const container = document.getElementById(containerId);
   const slides = Array.from(container.getElementsByClassName("mySlides"));
-  const dots = Array.from(container.parentElement.querySelectorAll(".dot"));
 
   let index = 1;
-
   function show(n) {
     if(n > slides.length) {
       index = 1;
@@ -51,10 +49,7 @@ function initSlideshow(containerId) {
     }
 
     slides.forEach(s => (s.style.display = "none"));
-    dots.forEach(d => d.classList.remove("active"));
-
     slides[index - 1].style.display = "block";
-    dots[index - 1].classList.add("active");
   }
 
   function plus(n) {
@@ -67,7 +62,6 @@ function initSlideshow(containerId) {
 
   container.querySelector(".prev")?.addEventListener("click", () => plus(-1));
   container.querySelector(".next")?.addEventListener("click", () => plus(1));
-  dots.forEach((dot, i) => dot.addEventListener("click", () => go(i + 1)));
 
   controllers.set(containerId, { plus, go, container });
   show(1);
