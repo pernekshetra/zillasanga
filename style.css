@@ -365,8 +365,9 @@ a {
     width: 250px;
     & > img {
       width: 120px;
-      border-radius: 50px;
       height: 150px;
+      border-radius: 50px;
+      object-fit: cover;
     }
     & > .name {
       font-weight: bold;
