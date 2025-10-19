@@ -319,6 +319,9 @@ a {
   justify-content: center;
   gap: 30px;
   padding: 40px 5%;
+  & > .science {
+    background: #D4EAFF;
+  }
 }
 
 .card {
