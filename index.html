@@ -62,7 +62,6 @@
       <span class="dot" onclick="currentSlide(1, this)"></span>
       <span class="dot" onclick="currentSlide(2, this)"></span>
       <span class="dot" onclick="currentSlide(3, this)"></span>
-      <span class="dot" onclick="currentSlide(4, this)"></span>
     </div>
     <section id="about" class="intro">
       <div class="intro-texts">
@@ -331,7 +330,6 @@
         let index = 1;
 
         function show(n) {
-          // clamp + wrap
           if(n > slides.length) {
             index = 1;
           }
