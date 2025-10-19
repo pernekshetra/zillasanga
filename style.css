@@ -714,11 +714,9 @@ a {
   padding: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .sanga-subdivisions {
-    --card: #011222;
-    --text: white;
-  }
+.sanga-subdivisions {
+  --card: #011222;
+  --text: white;
 }
 
 .sanga-subdivisions h2 {
