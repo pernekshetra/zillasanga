@@ -305,6 +305,9 @@ nav {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     padding-bottom: 3%;
+    & > h2, h3 {
+      margin-top: 12px;
+    }
   }
 }
 
