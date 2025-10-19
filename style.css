@@ -360,8 +360,8 @@ a {
     border-radius: 12px;
     padding: 20px;
     outline-offset: 2px;
-    border: 2px dotted #9E1B32;
-    outline: 3px solid #9E1B32; 
+    border: 2px dotted #011222;
+    outline: 3px solid #011222;
     width: 250px;
     & > img {
       width: 120px;
