@@ -1,10 +1,11 @@
-[{
+[
+  {
     "img": "assets/members/a0.jpg",
     "name": "ಶಂಕರ ಪಾಟಾಳಿ",
     "role": "ಗೌರವಾಧ್ಯಕ್ಷರು",
     "place": "ಮುಕ್ರಂಪಾಡಿ "
   },
-    {
+  {
     "img": "assets/members/a1.jpg",
     "name": "ಕೆ.ರಾಮ ಮುಗ್ರೋಡಿ",
     "role": "ಅಧ್ಯಕ್ಷರು",
@@ -28,142 +29,142 @@
     "role": "ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿಗಳು",
     "place": "ಸುಳ್ಯ"
   },
-   {
+  {
     "img": "assets/members/a5.jpg",
     "name": "ಸುರೇಶ್ ಕರ್ಲಪ್ಪಾಡಿ",
     "role": "ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಕರ್ಲಪ್ಪಾಡಿ"
   },
-   {
+  {
     "img": "assets/members/a6.jpg",
     "name": "ಚಂದ್ರಶೇಖರ್ ಪನ್ನೆ",
     "role": "ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಬೆಳ್ಳಾರೆ"
   },
-   {
+  {
     "img": "assets/members/a7.jpg",
     "name": "ಸುಬ್ಬಪ್ಪ ಪಟ್ಟೆ",
     "role": "ಕೋಶಾಧಿಕಾರಿಗಳು",
     "place": "ಪಟ್ಟೆ"
   },
-   {
+  {
     "img": "assets/members/a8.jpg",
     "name": "ದಿನಕರ ಅಳಿಕೆ",
     "role": "ಸಂಘಟನಾ ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಮಂಗಳೂರು"
   },
-   {
+  {
     "img": "assets/members/a9.jpg",
     "name": "ಕೇಶವ ಕೋರಿಗದ್ದೆ",
     "role": "ಸಂಘಟನಾ ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಈಶ್ವರಮಂಗಲ"
   },
-   {
+  {
     "img": "assets/members/a10.jpg",
     "name": "ಯಸ್ ದಾಮೋದರ ಪುತ್ತೂರು",
     "role": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಪುತ್ತೂರು"
   }
   ,
-   {
+  {
     "img": "assets/members/a11.jpg",
     "name": "ರವಿಚಂದ್ರ ಭಟ್ರುಕುಮೇರು",
     "role": "ಕ್ರೀಡಾ ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಮಂಗಳೂರು"
   }
   ,
-   {
+  {
     "img": "assets/members/a12.jpg",
     "name": "ತಿಮ್ಮಪ್ಪ ಪಾಟಾಳಿ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಪುತ್ತೂರು"
   },
-   {
+  {
     "img": "assets/members/a13.jpg",
     "name": "ಬಾಲಕೃಷ್ಣ ಯಸ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಮಂಗಳೂರು"
   },
-   {
+  {
     "img": "assets/members/a14.jpg",
     "name": "ಉದಯ ಕುಮಾರ್ ಗೋರಿಗುಡ್ಡೆ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಮಂಗಳೂರು"
   }
   ,
-   {
+  {
     "img": "assets/members/a15.jpg",
     "name": "ನಾರಾಯಣ ಮಂಜನಾಡಿ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಮಂಗಳೂರು"
   },
-   {
+  {
     "img": "assets/members/a16.jpg",
     "name": "ಮಹಾಲಿಂಗ ಪಂಚೋಡಿ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಈಶ್ವರಮಂಗಲ"
   },
-   {
+  {
     "img": "assets/members/a17.jpg",
     "name": "ಆನಂದ ಏರಾಜೆ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಸುಳ್ಯಪದವು "
   },
-   {
+  {
     "img": "assets/members/a18.jpg",
     "name": "ಸುಬ್ಬ ಪಾಟಾಳಿ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಮೂಡಂಬೈಲು"
   },
-   {
+  {
     "img": "assets/members/a19.jpg",
     "name": "ರಾಜೇಶ್ ದೇವಸ್ಯ",
     "role": "ಸದಸ್ಯರು",
     "place": "ಈಶ್ವರಮಂಗಲ"
   },
-   {
+  {
     "img": "assets/members/a20.jpg",
     "name": "ನಾಗೇಶ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಪೆರುವಾಯಿ"
   },
-   {
+  {
     "img": "assets/members/a21.jpg",
     "name": "ವಿಜಯ ಕುಮಾರ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಎರ್ಮೇಟ್ಟಿ"
   },
-   {
+  {
     "img": "assets/members/a22.jpg",
     "name": "ಪ್ರಸಾದ್ ಬಾಕ್ತಿಮಾರ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಪುತ್ತೂರು"
   },
-   {
+  {
     "img": "assets/members/a23.jpg",
     "name": "ಪ್ರದೀಪ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಪಟ್ಟುಮೂಲೆ"
   },
-   {
+  {
     "img": "assets/members/a24.jpg",
     "name": "ನವೀನ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಪಾದೆಕಲ್ಲು"
   },
-   {
+  {
     "img": "assets/members/a25.jpg",
     "name": "ಪ್ರವೀಣ್ ಕುಮಾರ್",
     "role": "ಸದಸ್ಯರು",
     "place": "ಜಯನಗರ"
   },
-   {
+  {
     "img": "assets/members/a26.jpg",
     "name": "ಕೃಷ್ಣ ಡಿ ಯಸ್",
     "role": "ಆಂತರಿಕ ಲೆಕ್ಕ ಪರಿಶೋಧಕರು",
     "place": "ಮಂಗಳೂರು"
   },
-   {
+  {
     "img": "assets/members/a27.jpg",
     "name": "ಚಂದ್ರಶೇಖರ ಉದ್ದಂತಡ್ಕ",
     "role": "ಕಾನೂನು ಸಲಹೆಗಾರರು",
