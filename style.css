@@ -32,6 +32,12 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
 } 
 
 .heading {
@@ -678,7 +684,7 @@ a {
 .sanga-subdivisions {
   --bg: #0b1220;
   --fg: #111827;
-  --text: #111827;
+  --text: white;
   --text-dark: #e2e8f0;
   --card: #fff;
   --radius: 1rem;
@@ -690,8 +696,8 @@ a {
 
 @media (prefers-color-scheme: dark) {
   .sanga-subdivisions {
-    --card: #1e293b;
-    --text: #e2e8f0;
+    --card: #011222;
+    --text: white;
   }
 }
 
