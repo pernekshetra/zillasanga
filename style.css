@@ -46,6 +46,7 @@ body {
     gap: 25px;
     & > #close {
       display: none;
+      cursor: pointer;
     }
   }
 } 
