@@ -41,19 +41,19 @@
       </nav>
     </header>
     <div class="slideshow-container" id="slideshow1">
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="prev" onclick="plusSlides(-1, this)">&#10094;</a>
       <img class="mySlides fade" src="./assets/cover/1.jpg" style="width:100%">
       <img class="mySlides fade" src="./assets/cover/2.jpg" style="width:100%">
       <img class="mySlides fade" src="./assets/cover/3.jpg" style="width:100%">
       <img class="mySlides fade" src="./assets/cover/4.jpg" style="width:100%">
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="next" onclick="plusSlides(1, this)">&#10095;</a>
     </div>
     <br>
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(1, this)"></span>
+      <span class="dot" onclick="currentSlide(2, this)"></span>
+      <span class="dot" onclick="currentSlide(3, this)"></span>
+      <span class="dot" onclick="currentSlide(4, this)"></span>
     </div>
     <section id="about" class="intro">
       <div class="intro-texts">
@@ -168,17 +168,17 @@
       accumsan arcu.
       </p>
       <div class="slideshow-container" id="slideshow2">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="prev" onclick="plusSlides(-1, this)">&#10094;</a>
         <img class="mySlides fade" src="./assets/cover/1.jpg" style="width:100%">
         <img class="mySlides fade" src="./assets/cover/1.jpg" style="width:100%">
         <img class="mySlides fade" src="./assets/cover/1.jpg" style="width:100%">
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="next" onclick="plusSlides(1, this)">&#10095;</a>
       </div>
       <br>
       <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(1, this)"></span>
+        <span class="dot" onclick="currentSlide(2, this)"></span>
+        <span class="dot" onclick="currentSlide(3, this)"></span>
     </section>
     <!-- Cultural Computation -->
     <section class="culture" id="cultural">
@@ -282,55 +282,65 @@
       </div>
     </footer>
     <script>
+      const controllers = new Map();
+
       function initSlideshow(containerId) {
-        let slideIndex = 1;
         const container = document.getElementById(containerId);
-        const slides = container.getElementsByClassName("mySlides");
-        const dots = container.parentElement.querySelectorAll(".dot");
+        const slides = Array.from(container.getElementsByClassName("mySlides"));
+        const dots = Array.from(container.parentElement.querySelectorAll(".dot"));
 
-        function showSlides(n) {
-          if (n > slides.length) slideIndex = 1;
-          if (n < 1) slideIndex = slides.length;
+        let index = 1;
 
-          for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        function show(n) {
+          // clamp + wrap
+          if(n > slides.length) {
+            index = 1;
           }
-          for (let i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          else if(n < 1) {
+            index = slides.length;
+          }
+          else {
+            index = n;
           }
 
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
+          slides.forEach(s => (s.style.display = "none"));
+          dots.forEach(d => d.classList.remove("active"));
+
+          slides[index - 1].style.display = "block";
+          dots[index - 1].classList.add("active");
         }
 
-        function plusSlides(n) {
-          showSlides((slideIndex += n));
+        function plus(n) {
+          show(index + n);
         }
 
-        function currentSlide(n) {
-          showSlides((slideIndex = n));
+        function go(n) {
+          show(n);
         }
 
-        // Attach controls
-        const prev = container.querySelector(".prev");
-        const next = container.querySelector(".next");
+        container.querySelector(".prev")?.addEventListener("click", () => plus(-1));
+        container.querySelector(".next")?.addEventListener("click", () => plus(1));
+        dots.forEach((dot, i) => dot.addEventListener("click", () => go(i + 1)));
 
-        if (prev && next) {
-          prev.addEventListener("click", () => plusSlides(-1));
-          next.addEventListener("click", () => plusSlides(1));
-        }
-
-        dots.forEach((dot, index) => {
-          dot.addEventListener("click", () => currentSlide(index + 1));
-        });
-
-        // Initialize the first slide
-        showSlides(slideIndex);
+        controllers.set(containerId, { plus, go, container });
+        show(1);
       }
 
-      // Initialize both slideshows independently
+      window.plusSlides = function (n, el) {
+        const container = el?.closest(".slideshow");
+        if (!container) return;
+        controllers.get(container.id)?.plus(n);
+      };
+
+      window.currentSlide = function (n, el) {
+        const container = el?.closest(".slideshow");
+        if (!container) return;
+        controllers.get(container.id)?.go(n);
+      };
+
       initSlideshow("slideshow1");
       initSlideshow("slideshow2");
+
     </script>
     <script src="script.js"></script>
     <script type="module">
