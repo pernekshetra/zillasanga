@@ -39,6 +39,7 @@ body {
   z-index: 1;
   & > img {
     display: none;
+    cursor: pointer;
   }
   & > nav {
     display: flex;
