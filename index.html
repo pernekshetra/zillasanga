@@ -41,6 +41,7 @@
       <div class="heading">
         <a href="#"><img width="30" height="30" src="./assets/sanga.png" alt="" /><span><strong>ದಕ್ಷಿಣ ಕನ್ನಡ ಜಿಲ್ಲಾ ಗಾಣಿಗ ಸಮಾಜ ಸೇವಾ ಸಂಘ (ರಿ.) ಮಂಗಳೂರು</strong></span></a>
       </div>
+      <img id="ham" src="assets/ham.png" />
       <nav>
         <ul class="menus">
           <li><a class="top-menu" href="#about">ಸಂಘ</a></li>
@@ -48,6 +49,7 @@
           <li><a class="top-menu" href="#events">ಹಿಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳು</a></li>
           <li><a class="top-menu" href="#cultural">ಸಾಂಸ್ಕೃತಿಕ</a></li>
         </ul>
+        <img id="close" src="assets/close.svg" />
       </nav>
     </header>
     <div class="slideshow-container" id="slideshow1">
@@ -319,66 +321,6 @@
         </p>
       </div>
     </footer>
-    <script>
-      const controllers = new Map();
-
-      function initSlideshow(containerId) {
-        const container = document.getElementById(containerId);
-        const slides = Array.from(container.getElementsByClassName("mySlides"));
-        const dots = Array.from(container.parentElement.querySelectorAll(".dot"));
-
-        let index = 1;
-
-        function show(n) {
-          if(n > slides.length) {
-            index = 1;
-          }
-          else if(n < 1) {
-            index = slides.length;
-          }
-          else {
-            index = n;
-          }
-
-          slides.forEach(s => (s.style.display = "none"));
-          dots.forEach(d => d.classList.remove("active"));
-
-          slides[index - 1].style.display = "block";
-          dots[index - 1].classList.add("active");
-        }
-
-        function plus(n) {
-          show(index + n);
-        }
-
-        function go(n) {
-          show(n);
-        }
-
-        container.querySelector(".prev")?.addEventListener("click", () => plus(-1));
-        container.querySelector(".next")?.addEventListener("click", () => plus(1));
-        dots.forEach((dot, i) => dot.addEventListener("click", () => go(i + 1)));
-
-        controllers.set(containerId, { plus, go, container });
-        show(1);
-      }
-
-      window.plusSlides = function (n, el) {
-        const container = el?.closest(".slideshow");
-        if (!container) return;
-        controllers.get(container.id)?.plus(n);
-      };
-
-      window.currentSlide = function (n, el) {
-        const container = el?.closest(".slideshow");
-        if (!container) return;
-        controllers.get(container.id)?.go(n);
-      };
-
-      initSlideshow("slideshow1");
-      initSlideshow("slideshow2");
-
-    </script>
     <script src="script.js"></script>
     <script type="module">
       import members from "/zillasanga/data/members.json" with { type: "json" };

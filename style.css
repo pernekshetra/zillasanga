@@ -28,7 +28,6 @@ body {
   padding-inline: 15px;
   padding-block: 15px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -38,6 +37,16 @@ body {
   right: 0;
   overflow: hidden;
   z-index: 1;
+  & > img {
+    display: none;
+  }
+  & > nav {
+    display: flex;
+    gap: 40px;
+    & > #close {
+      display: none;
+    }
+  }
 } 
 
 .heading {
@@ -68,12 +77,8 @@ body {
   text-decoration: underline;
 }
 
-.navbar {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+nav {
+  display: none;
 }
 
 .top-section {
@@ -341,6 +346,17 @@ a {
   width: 100%;
   border-radius: 10px;
   margin-top: 15px;
+}
+
+@media (max-width: 1006px) {
+  .header {
+    & > img {
+      display: block;
+    }
+    & > nav {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 768px) {
