@@ -758,3 +758,35 @@ a {
   color: #DC2626;
   font-family: monospace;
 }
+
+.albums {
+  text-align: center;
+  & > .albumWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    & > div {
+      flex: 1 1 300px;
+      position: relative;
+      & > a {
+        & > h4 {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%);
+          width: 100%;
+          background-color: white;
+          color: #011222;
+          border-bottom: 2px dotted #011222;
+        }
+        & > img {
+          border-radius: 15px 25px 155px 25px / 225px 150px 25px 115px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
