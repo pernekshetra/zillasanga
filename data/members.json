@@ -29,6 +29,12 @@
     "role": "ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿಗಳು",
     "place": "ಸುಳ್ಯ"
   },
+   {
+    "img": "assets/members/a7.jpg",
+    "name": "ಸುಬ್ಬಪ್ಪ ಪಟ್ಟೆ",
+    "role": "ಕೋಶಾಧಿಕಾರಿಗಳು",
+    "place": "ಪಟ್ಟೆ"
+  },
   {
     "img": "assets/members/a5.jpg",
     "name": "ಸುರೇಶ್ ಕರ್ಲಪ್ಪಾಡಿ",
@@ -40,12 +46,6 @@
     "name": "ಚಂದ್ರಶೇಖರ್ ಪನ್ನೆ",
     "role": "ಕಾರ್ಯದರ್ಶಿ",
     "place": "ಬೆಳ್ಳಾರೆ"
-  },
-  {
-    "img": "assets/members/a7.jpg",
-    "name": "ಸುಬ್ಬಪ್ಪ ಪಟ್ಟೆ",
-    "role": "ಕೋಶಾಧಿಕಾರಿಗಳು",
-    "place": "ಪಟ್ಟೆ"
   },
   {
     "img": "assets/members/a8.jpg",
