@@ -399,7 +399,7 @@ a {
     & > img {
       width: 120px;
       height: 150px;
-      border-radius: 50px;
+      border-radius: 15%;
       object-fit: cover;
     }
     & > .name {
@@ -475,24 +475,15 @@ a {
 }
 
 .wrapper {
-  width: 100%;
-  overflow: hidden;
-  padding: 20px 0;
-  position: relative;
-}
-
-.imageContainer {
   display: flex;
-  gap: 20px;
-  padding: 0 20px;
-  animation: scroll 20s linear infinite;
-  width: max-content;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.imageContainer .image {
+.image {
   height: 275px;
   min-width: 300px;
-  flex-shrink: 0;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -501,20 +492,10 @@ a {
 
 .image:hover {
   transform: scale(1.02);
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 @media (max-width: 768px) {
-  .imageContainer .image {
+  .image {
     min-width: 250px;
   }
 }
