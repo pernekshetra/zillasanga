@@ -8,6 +8,7 @@ function renderMembers(inMembers) {
 
       const memberImg = document.createElement("img");
       memberImg.src = member.img;
+      memberImg.setAttribute("loading", "lazy");
       memberDiv.appendChild(memberImg);
 
       const memberName = document.createElement("p");
