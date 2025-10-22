@@ -506,7 +506,7 @@ a {
   gap: 10px; /* Space between columns */
   align-items: center;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto 0px auto;
 }
 
 .main-image img {
