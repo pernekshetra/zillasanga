@@ -106,7 +106,7 @@ body {
   .menus {
     display: flex;
     flex-direction: column;        
-    gap: 15px;
+    gap: 1px;
     list-style: none;
     align-items: flex-end;
     width: 100%;
