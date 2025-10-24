@@ -111,3 +111,14 @@ closeBtn.onclick = function() {
   nav[0].style.display = "none";
   closeBtn.style.display = "none";
 };
+
+const menuLinks = document.querySelectorAll(".menus a");
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    header.style.flexWrap = "nowrap";
+    hamBtn.style.display = "block";
+    nav[0].style.display = "none";
+    closeBtn.style.display = "none";
+  });
+});
