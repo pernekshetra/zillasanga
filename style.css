@@ -79,8 +79,86 @@ body {
   text-decoration: underline;
 }
 
-nav {
+.nav {
   display: none;
+}
+
+@media (max-width: 1006px) {
+  #ham {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px; 
+    top: 18px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;       
+    align-items: flex-end;        
+    width: 100%;
+    background-color: #011222;
+    padding: 20px;
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: column;        
+    gap: 1px;
+    list-style: none;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .top-menu {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 3px 0;
+  }
+  
+  #close {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;   
+    top: 18px;
+  }
+}
+@media (min-width: 1007px) {
+  #ham,
+  #close {
+    display: none !important; 
+  }
+
+  nav {
+    display: flex !important; 
+    position: static;         
+    flex-direction: row;      
+    align-items: center;
+    background: none;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+
+  .menus {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .top-menu {
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .top-section {

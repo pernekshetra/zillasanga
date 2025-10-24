@@ -88,6 +88,11 @@ initSlideshow("slideshow1");
 initSlideshow("slideshow2");
 
 /* Hamburger navigation */
+window.onload = function() {
+  document.getElementById("close").style.display = "none";
+  document.getElementById("ham").style.display = "block";
+};
+
 const hamBtn = document.getElementById("ham");
 const closeBtn = document.getElementById("close");
 const nav = document.getElementsByTagName("NAV");
